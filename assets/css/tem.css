@@ -1,0 +1,156 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  /* height: 50000px; */
+    overflow-x: hidden;
+}
+:root{
+  --main-color: #ffc451;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules  */
+/* Start hero */
+.hero{
+  height: 100vh;
+  background-image: url("/assets/imgs/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.hero .ovarlay::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.hero .navigtions {
+    color: #444444;
+    font-size: 16px;
+    padding: 15px 0;
+}
+.hero .navigtions nav {
+    padding: 0 12px;
+    color: #444444;
+    font-size: 16px;
+}
+.hero .navigtions nav .navbar-brand .head-logo{
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+}
+.hero .navigtions nav .navbar-brand .head-logo span {
+    font-size: 32px;
+    color: var(--main-color);
+}
+.hero .navigtions nav ul .nav-item .nav-link.active {
+  color: var(--main-color);
+}
+.hero .navigtions nav ul .nav-item .nav-link{
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0 10px 30px;
+    transition: 0.6s;
+}
+.hero .navigtions nav ul .dropdown-menu{
+    padding: 10px 0;
+}
+.hero .navigtions nav ul .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #151515;
+    transition: 0.6s;
+}
+.hero .navigtions nav ul .dropdown-menu .dropdown-item:hover{
+  background-color: var(--main-color);
+}
+.hero .navigtions nav ul{
+  margin-left: auto;
+}
+.hero .navigtions nav ul .nav-item .nav-link:hover{
+    color: var(--main-color);
+}
+.hero .navigtions nav .hero-button{
+    padding: 7px 25px 8px;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    transition: 0.6s;
+}
+.hero .navigtions nav .hero-button:hover{
+  background-color: var(--main-color);
+  color: #343a40;
+}
+.hero .navigtions nav .navbar-toggler i{
+    color: #fff;
+}
+@media (max-width: 768px) {
+  .navbar-collapse{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .hero .navigtions nav .hero-button{
+    margin-left: 33px;
+  }
+}
+/* End hero */
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Breakpoint	Class infix	Dimensions
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px
+*/
